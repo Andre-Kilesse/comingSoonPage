@@ -61,7 +61,7 @@ header {
 }
 @media (min-width: 638px) {
   .main-img {
-    background-image: url("../../images/hero-desktop.jpg");
+    background-image: url("../images/hero-desktop.jpg");
     height: 100vh;
     max-height: 770px;
     width: 100%;
