@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  background-color: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-image: url("../../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+main {
+  max-width: 1200px;
+  margin: 3rem auto 6rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 638px) {
+  main {
+    margin: 0;
+    text-align: left;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1000px) {
+  main {
+    gap: 6rem;
+  }
+}
+
+header {
+  align-self: flex-start;
+  padding: 0 0 2.2rem 2.2rem;
+}
+@media (min-width: 638px) {
+  header {
+    display: none;
+  }
+}
+
+.main-img {
+  background-image: url("../../images/hero-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(220px + (100vw - 330px) * 0.5);
+  width: 100%;
+}
+@media (min-width: 638px) {
+  .main-img {
+    background-image: url("../../images/hero-desktop.jpg");
+    height: 100vh;
+    max-height: 770px;
+    width: 100%;
+  }
+}
+
+.hero {
+  color: hsl(0, 36%, 70%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: auto 2.2rem;
+}
+@media (min-width: 638px) {
+  .hero {
+    justify-content: center;
+    gap: 1rem;
+    line-height: 1.7;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  line-height: 0.8;
+  margin-top: 2.8rem;
+}
+
+.hero__content--black {
+  color: hsl(0, 6%, 24%);
+}
+
+.hero__logo--hidden {
+  display: none;
+}
+@media (min-width: 638px) {
+  .hero__logo--hidden {
+    display: inline;
+    max-width: 12rem;
+  }
+}
+
+.hero__form {
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 30px;
+  padding: 0.7rem 1.2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hero__form input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.hero__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 4rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.hero__button:hover {
+  background: linear-gradient(135deg, hsl(0, 69%, 91%), hsl(0, 55%, 78%));
+}
+
+.hero__form--icon-error {
+  display: none;
+  position: absolute;
+  right: 4.5rem;
+  top: 0.5rem;
+}
+
+.hero__form--text-error {
+  display: none;
+  color: hsl(0, 93%, 68%);
+  position: absolute;
+  bottom: -1.8rem;
+}
+
+.custom-alert {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: bottom 0.9s ease-in-out;
+}
+
+.custom-alert.show {
+  display: flex;
+  bottom: 0;
+}
+
+.custom-alert__content {
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  padding: 2rem;
+  border-radius: 8px 40px 8px 40px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-alert__content--clr {
+  color: hsl(0, 36%, 70%);
+}
+
+.custom-alert__button {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.custom-alert__button:hover {
+  background: linear-gradient(135deg, hsl(0, 69%, 91%), hsl(0, 55%, 78%));
+}/*# sourceMappingURL=index.css.map */

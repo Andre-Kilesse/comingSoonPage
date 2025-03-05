@@ -1,0 +1,9 @@
+header{
+    align-self: flex-start;
+    padding: 0 0 2.2rem 2.2rem;
+
+    //Remove na versão para desktop
+    @media(min-width: 638px){
+        display: none;
+    }
+}

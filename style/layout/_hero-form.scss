@@ -1,0 +1,49 @@
+.hero__form{
+    border: 1px solid $clr-primary;
+    border-radius: 30px;
+    padding: .7rem 1.2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input {
+        border: none;
+        outline: none;
+        flex: 1; 
+        font-size: 1rem;
+        background: transparent;
+    }
+}
+
+.hero__button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 4rem;
+    border: none;
+    border-radius: 30px;
+    background: $clr-btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover{
+        background: $clr-btn-act;
+    }
+}
+
+.hero__form--icon-error{
+    display: none;
+    position: absolute;
+    right: 4.5rem;
+    top: .5rem;
+}
+
+.hero__form--text-error{
+    display: none;
+    color: $clr-error;
+    position: absolute;
+    bottom: -1.8rem;
+}
