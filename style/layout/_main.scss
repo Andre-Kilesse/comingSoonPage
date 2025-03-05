@@ -1,13 +1,13 @@
 //Imagem lateral
 .main-img{
-    background-image: url("./../images/hero-mobile.jpg");
+    background-image: url("https://andre-kilesse.github.io/comingSoonPage/images/hero-mobile.jpg");
     background-size: cover;
     background-position: center;
     height: calc(220px + (100vw - 330px) * 0.5);
     width: 100%;
 
     @media(min-width: 638px){
-        background-image: url('./../images/hero-desktop.jpg');
+        background-image: url('https://andre-kilesse.github.io/comingSoonPage/images/hero-desktop.jpg');
         height: 100vh;
         max-height: 770px;
         width: 100%;
