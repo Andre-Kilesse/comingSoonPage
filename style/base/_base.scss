@@ -13,7 +13,7 @@ body{
     justify-content: center;
     font-family: $global-text;
     font-size: $fs-body;
-    background-color: $clr-bg;
+    background-image: $clr-bg;
     background-image: url('https://andre-kilesse.github.io/comingSoonPage/images/bg-pattern-desktop.svg');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -21,7 +21,7 @@ body{
     
 
 main{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 3rem auto 6rem auto;
     display: flex;
     flex-direction: column;

@@ -20,6 +20,7 @@ form.addEventListener('submit', (e) => {
     }
 
     alertBox.classList.add('show');
+    alertBox.removeAttribute('inert');
 
     emailInput.value = "";
     emailInput.style.borderColor = '';
@@ -29,4 +30,5 @@ form.addEventListener('submit', (e) => {
 
 closeAlert.addEventListener('click', () => {
     alertBox.classList.remove('show');
+    alertBox.setAttribute('inert', '');
 })
